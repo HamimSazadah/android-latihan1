@@ -13,6 +13,7 @@ public class Result extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
+        setTitle("Hasil");
         lblNama = (TextView)findViewById(R.id.lblNama);
         lblEmail = (TextView)findViewById(R.id.lblEmail);
         lblTanggal = (TextView)findViewById(R.id.lblTanggal);

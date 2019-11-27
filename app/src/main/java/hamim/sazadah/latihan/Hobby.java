@@ -18,6 +18,7 @@ public class Hobby extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hobby);
+        setTitle("Hobby");
         cRead = (CheckBox)findViewById(R.id.cRead);
         cWrite = (CheckBox)findViewById(R.id.cWrite);
         cProgram = (CheckBox)findViewById(R.id.cProgram);

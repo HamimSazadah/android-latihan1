@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle("Main Menu");
 
         btnAbout = (Button)findViewById(R.id.btnAbout);
         btnList = (ImageButton) findViewById(R.id.btnList);
