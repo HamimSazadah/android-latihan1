@@ -20,7 +20,7 @@ public class About extends AppCompatActivity {
     }
     public void call(View v){
         Intent intent = new Intent(Intent.ACTION_DIAL);
-        intent.setData(Uri.parse("tel:08567869149"));
+        intent.setData(Uri.parse("tel:08567869150"));
         startActivity(intent);
     }
 

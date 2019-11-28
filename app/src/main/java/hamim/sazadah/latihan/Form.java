@@ -64,9 +64,12 @@ public class Form extends AppCompatActivity {
                 }else if(!(txtEmail.getText().toString().matches("\\w+@\\w+\\.\\w+"))){
                     txtEmail.setError("Email tidak Valid!");
                 }else if(kota.trim().matches("Pilih Kota")){
-                    Toast.makeText(getBaseContext(),"Harus Pilih Kota!",Toast.LENGTH_SHORT);
-                }else if(!(txtTanggal.getText().toString().matches("\\d{2}/\\d{2}/\\d{4}"))){
-                    Toast.makeText(getBaseContext(),"Format Tanggal : dd/mm/yyyy",Toast.LENGTH_SHORT);
+                    Toast.makeText(getBaseContext(),"Harus Pilih Kota!",Toast.LENGTH_SHORT).show();
+                }else if(jkl.length()==0){
+                    Toast.makeText(getBaseContext(),"Jenis Kelamin harus diisi!",Toast.LENGTH_SHORT).show();
+                }
+                else if(!(txtTanggal.getText().toString().matches("\\d{2}/\\d{2}/\\d{4}"))){
+                    Toast.makeText(getBaseContext(),"Format Tanggal : dd/mm/yyyy",Toast.LENGTH_SHORT).show();
                 }else {
                     Intent intent = new Intent(Form.this, Result.class);
                     intent.putExtra("nama", txtNama.getText().toString());
