@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Latihan</string>
     <string-array name="alamat">
+        <item>Pilih Kota</item>
         <item>Bekasi</item>
         <item>Jakarta</item>
         <item>Depok</item>

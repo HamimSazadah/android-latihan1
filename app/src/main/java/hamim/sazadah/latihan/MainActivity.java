@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Button btnAbout,btnHobby,btnForm;
+    Button btnAbout,btnHobby,btnForm,btnWeb;
     ImageButton btnList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,11 +23,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnList = (ImageButton) findViewById(R.id.btnList);
         btnForm = (Button)findViewById(R.id.btnForm);
         btnHobby = (Button)findViewById(R.id.btnHobby);
+        btnWeb = (Button)findViewById(R.id.btnWeb);
 
         btnHobby.setOnClickListener(this);
         btnList.setOnClickListener(this);
         btnForm.setOnClickListener(this);
         btnAbout.setOnClickListener(this);
+        btnWeb.setOnClickListener(this);
 
     }
 
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnList :   intent = new Intent(this,List.class);  break;
             case R.id.btnHobby :    intent = new Intent(this,Hobby.class); break;
             case R.id.btnForm:   intent = new Intent(this,Form.class);break;
+            case R.id.btnWeb:   intent = new Intent(this,WebLauncher.class);break;
         }
         startActivity(intent);
         finish();

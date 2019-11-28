@@ -92,7 +92,8 @@
             <RadioGroup
                 android:id="@+id/rdJkl"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <RadioButton
                     android:id="@+id/rdLaki"
